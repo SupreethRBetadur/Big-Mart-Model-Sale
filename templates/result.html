@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        html, body {
+            /* height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to left, #667292 0%, #a2b9bc 100%); */
+        }
+
+        body {
+            background-image: url('/static/Hero_Big_Mart.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 200px;
+            background-color: rgba(255, 255, 255, 0.8); /* Added transparency to the container background */
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e8e7e1;
+            color: #050906;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            font-size: 1.5rem;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #007bff;
+            border: 1px solid #007bff;
+            border-radius: 4px;
+            background-color: #ffffff;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result">
+            {{ prediction_text }}
+            <br>
+            Sales Value is between {{ lower_bound }} and {{ upper_bound }}
+        </div>
+        <a href="/">Back to Form</a>
+    </div>
+</body>
+
+</ht
